@@ -78,49 +78,44 @@
         #pxl-mixins.odometer-field;
       }
 
-      .field-name-field-slogan-row-one,
-      .field-name-field-slogan-row-two,
-      .field-name-field-slogan-row-three {
-        position: absolute;
-        left: 15px;
-        padding: 10px;
-        font-family: @pxl-text-font-bold;
-        font-size: 28px;
-        line-height: 28px;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-        white-space: nowrap;
-        color: #fff;
-        background-color: @pxl-color-green;
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-
-        @media @narrow {
-          left: 50px;
-          padding: 8px 15px;
-          font-size: 35px;
-          line-height: 35px;
-        }
-        @media @tablet {
-          left: 125px;
-          padding: 12px 15px;
-          font-size: 52px;
-          line-height: 42px;
-        }
-        @media @normal {
-          left: 165px;
-        }
-      }
-
       .field-name-field-slogan-row-one {
-        top: 35%;
-      }
+        position: absolute;
+        top: 28%;
+        left: 0;
+        width: 100%;
 
-      .field-name-field-slogan-row-two {
-        top: 54%;
-      }
+        .field-items {
+          margin: 0 auto;
+          max-width: @pxl-max-width;
 
-      .field-name-field-slogan-row-three {
-        top: 73%;
+          .field-item {
+            display: table;
+            margin: 0 0 10px 15px;
+            padding: 10px;
+            font-family: @pxl-text-font-bold;
+            font-size: 28px;
+            line-height: 28px;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            color: #fff;
+            background-color: @pxl-color-green;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+            @media @narrow {
+              margin: 0 0 10px 20px;
+              padding: 8px 15px;
+              font-size: 35px;
+              line-height: 35px;
+            }
+            @media @tablet {
+              margin: 0 0 20px 20px;
+              padding: 12px 15px;
+              font-size: 52px;
+              line-height: 42px;
+            }
+          }
+        }
       }
 
       .field-name-field-link {

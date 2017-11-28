@@ -10086,19 +10086,15 @@ form#user-login {
  *  Node page component
  * --------------------------------------------------*/
 .node.node-page {
-  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
 }
 .node.node-page .row div.col-sm-12 {
-  padding: 20px;
-}
-@media screen and (min-width: 30em) {
-  .node.node-page .row div.col-sm-12 {
-    padding: 20px 30px;
-  }
+  padding: 20px 0;
 }
 @media screen and (min-width: 64em) {
   .node.node-page .row div.col-sm-12 {
-    padding: 30px 100px;
+    padding: 30px 0;
   }
 }
 .node.node-page .row div.col-sm-12 .fa-info {
@@ -10134,9 +10130,6 @@ form#user-login {
   .node.node-page .row div.col-sm-12 .field-name-title h2 {
     font-size: 24px;
   }
-}
-.node.node-page .row div.col-sm-12 .field-name-body {
-  text-align: center;
 }
 .node.node-page .row div.col-sm-12 .field-name-body h1,
 .node.node-page .row div.col-sm-12 .field-name-body h2,
@@ -10492,6 +10485,9 @@ form#user-login {
   height: auto;
   min-height: 350px;
 }
+.node.node-page .row div.col-sm-12 .field-name-body p {
+  text-align: center;
+}
 .node.node-page .row div.col-sm-12 .field-name-body a {
   border-bottom: 1px solid #a68c5a;
 }
@@ -10514,17 +10510,17 @@ form#user-login {
 }
 @media screen and (min-width: 30em) {
   .node.node-reason .row div.col-sm-12 {
-    padding: 20px 30px;
+    padding: 20px 0;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-reason .row div.col-sm-12 {
-    padding: 30px 80px;
+    padding: 30px 0;
   }
 }
 @media screen and (min-width: 64em) {
   .node.node-reason .row div.col-sm-12 {
-    padding: 30px 100px;
+    padding: 30px 0;
   }
 }
 .node.node-reason .row div.col-sm-12 .field-name-field-reason-number {
@@ -11374,24 +11370,20 @@ form#user-login {
  *  Node / block webform component
  * --------------------------------------------------*/
 .node.node-webform {
-  padding-bottom: 30px;
+  margin: 0 auto;
+  max-width: 800px;
 }
 .node.node-webform .row .col-sm-12 {
-  padding: 50px 20px 50px;
+  padding: 50px 10px;
 }
 @media screen and (min-width: 30em) {
   .node.node-webform .row .col-sm-12 {
-    padding: 50px 30px 50px;
+    padding: 50px 15px;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-webform .row .col-sm-12 {
-    padding: 75px 80px 50px;
-  }
-}
-@media screen and (min-width: 64em) {
-  .node.node-webform .row .col-sm-12 {
-    padding: 75px 100px 50px;
+    padding: 80px 20px;
   }
 }
 .node.node-webform .row .col-sm-12 .field-name-field-slogan .field-item {
@@ -11779,24 +11771,18 @@ form#user-login {
   margin-bottom: 50px;
 }
 .node.node-webform.view-mode-taler {
-  padding-bottom: 30px;
-}
-.node.node-webform.view-mode-taler .row {
-  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 50px 10px;
 }
 @media screen and (min-width: 30em) {
-  .node.node-webform.view-mode-taler .row {
-    padding: 0 20px;
+  .node.node-webform.view-mode-taler {
+    padding: 50px 15px;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-webform.view-mode-taler .row {
-    padding: 0 70px;
-  }
-}
-@media screen and (min-width: 64em) {
-  .node.node-webform.view-mode-taler .row {
-    padding: 0 90px;
+  .node.node-webform.view-mode-taler {
+    padding: 80px 20px;
   }
 }
 .node.node-webform.view-mode-taler .row .col-sm-12,
@@ -12381,11 +12367,19 @@ form#user-login {
     width: 6px;
   }
 }
-.node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-one,
-.node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-two,
-.node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-three {
+.node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-one {
   position: absolute;
-  left: 15px;
+  top: 28%;
+  left: 0;
+  width: 100%;
+}
+.node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-one .field-items {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-one .field-items .field-item {
+  display: table;
+  margin: 0 0 10px 15px;
   padding: 10px;
   font-family: 'ProximaNovaBold';
   font-size: 28px;
@@ -12398,40 +12392,20 @@ form#user-login {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 30em) {
-  .node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-one,
-  .node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-two,
-  .node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-three {
-    left: 50px;
+  .node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-one .field-items .field-item {
+    margin: 0 0 10px 20px;
     padding: 8px 15px;
     font-size: 35px;
     line-height: 35px;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-one,
-  .node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-two,
-  .node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-three {
-    left: 125px;
+  .node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-one .field-items .field-item {
+    margin: 0 0 20px 20px;
     padding: 12px 15px;
     font-size: 52px;
     line-height: 42px;
   }
-}
-@media screen and (min-width: 64em) {
-  .node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-one,
-  .node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-two,
-  .node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-three {
-    left: 165px;
-  }
-}
-.node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-one {
-  top: 35%;
-}
-.node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-two {
-  top: 54%;
-}
-.node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-three {
-  top: 73%;
 }
 .node.node-page-banner .row .col-sm-12 .field-name-field-link {
   display: none;
@@ -13026,10 +13000,11 @@ form#user-login {
   min-height: 350px;
 }
 /*
- *  Node Event component
+ *  Node articlep component
  * --------------------------------------------------*/
 .node.node-article {
-  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
 }
 .node.node-article .row div.col-sm-12 {
   cursor: pointer;
@@ -16537,10 +16512,11 @@ form.webform-client-form-49 div.form-actions button.webform-submit:focus {
  *  View reasons component
  * --------------------------------------------------*/
 .view.view-reasons {
-  margin: 0 0 50px;
+  margin: 0 auto 50px;
+  max-width: 800px;
 }
 .view.view-reasons .view-header {
-  padding: 0 20px;
+  padding: 0;
 }
 .view.view-reasons .view-header p {
   padding: 50px 0 30px;
@@ -16551,25 +16527,12 @@ form.webform-client-form-49 div.form-actions button.webform-submit:focus {
   text-align: center;
   border-top: 1px solid #c7c7c7;
 }
-@media screen and (min-width: 30em) {
-  .view.view-reasons .view-header {
-    padding: 0 30px;
-  }
-}
 @media screen and (min-width: 48em) {
-  .view.view-reasons .view-header {
-    padding: 0 80px;
-  }
   .view.view-reasons .view-header p {
     font-size: 52px;
     line-height: 58px;
     letter-spacing: -0.02em;
     text-align: left;
-  }
-}
-@media screen and (min-width: 64em) {
-  .view.view-reasons .view-header {
-    padding: 0 100px;
   }
 }
 /*
@@ -16591,45 +16554,55 @@ header#navbar {
 body.admin-menu header#navbar {
   top: 0;
 }
-header#navbar .container {
+header#navbar .container,
+header#navbar .container-fluid {
   padding: 0 15px 10px;
   background: none;
 }
-header#navbar .container .navbar-header a.logo img {
+header#navbar .container .navbar-header a.logo img,
+header#navbar .container-fluid .navbar-header a.logo img {
   display: none;
   max-height: 50px;
   width: auto;
 }
-header#navbar .container .navbar-header a.navbar-brand {
+header#navbar .container .navbar-header a.navbar-brand,
+header#navbar .container-fluid .navbar-header a.navbar-brand {
   padding: 0;
   font-family: 'ProximaNovaLight';
   font-size: 52px;
   color: #222222;
   line-height: 1;
 }
-header#navbar .container .navbar-header .navbar-toggle {
+header#navbar .container .navbar-header .navbar-toggle,
+header#navbar .container-fluid .navbar-header .navbar-toggle {
   padding: 5px 10px;
 }
 /*
  *  Content section (main content)
  * --------------------------------------------------*/
-.container {
+.container,
+.container-fluid {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 200dpi), only screen and (min-resolution: 1.25dppx) {
-  .container {
+  .container,
+  .container-fluid {
     -webkit-font-smoothing: antialiased;
   }
 }
-.container a {
+.container a,
+.container-fluid a {
   outline: none;
   text-decoration: none;
 }
 .container a.active,
+.container-fluid a.active,
 .container a:hover,
-.container a:focus {
+.container-fluid a:hover,
+.container a:focus,
+.container-fluid a:focus {
   outline: none;
 }
 html {
@@ -16637,56 +16610,67 @@ html {
 }
 body {
   position: relative;
-  height: 100%;
-  min-height: 320px;
-  background: #444;
+  min-height: 100%;
 }
 body .main-container {
+  padding-bottom: 0px;
   height: 100%;
 }
-body .main-container .container {
+body .main-container .container,
+body .main-container .container-fluid {
   padding: 0;
   min-height: 100%;
 }
-body .main-container .container #page-header .region-header h2.block-title {
+body .main-container .container #page-header .region-header h2.block-title,
+body .main-container .container-fluid #page-header .region-header h2.block-title {
   margin: 20px 0 10px;
   font-family: 'ProximaNovaLight';
   font-size: 30px;
 }
-body .main-container .container .row {
+body .main-container .container .row,
+body .main-container .container-fluid .row {
   margin: 0 auto;
 }
-body .main-container .container .row section {
+body .main-container .container .row section,
+body .main-container .container-fluid .row section {
   padding: 0;
 }
-body .main-container .container .row section h1.page-header {
+body .main-container .container .row section h1.page-header,
+body .main-container .container-fluid .row section h1.page-header {
   display: none;
   margin: 20px 0 10px;
   font-family: 'ProximaNovaBold';
   font-size: 52px;
 }
-body .main-container .container .row section .messages {
+body .main-container .container .row section .messages,
+body .main-container .container-fluid .row section .messages {
   margin-top: 20px;
 }
-body .main-container .container .row section ul.nav-tabs {
+body .main-container .container .row section ul.nav-tabs,
+body .main-container .container-fluid .row section ul.nav-tabs {
   margin: 20px 0 5px;
 }
-body .main-container .container .row section ul.nav-tabs li {
+body .main-container .container .row section ul.nav-tabs li,
+body .main-container .container-fluid .row section ul.nav-tabs li {
   float: right;
 }
-body .main-container .container .row section ul.nav-tabs li a {
+body .main-container .container .row section ul.nav-tabs li a,
+body .main-container .container-fluid .row section ul.nav-tabs li a {
   padding: 5px 10px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 17px;
   border-radius: 0;
 }
-body .main-container .container .row section ul.action-links {
+body .main-container .container .row section ul.action-links,
+body .main-container .container-fluid .row section ul.action-links {
   margin: 0;
 }
-body .main-container .container .row section ul.action-links li {
+body .main-container .container .row section ul.action-links li,
+body .main-container .container-fluid .row section ul.action-links li {
   float: right;
 }
-body .main-container .container .row section ul.action-links li a {
+body .main-container .container .row section ul.action-links li a,
+body .main-container .container-fluid .row section ul.action-links li a {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 17px;
 }
@@ -16713,6 +16697,16 @@ body .main-container .fading.fading-bottom {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffffff', GradientType=0);
+}
+body footer.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  height: 0px;
+  border-top: 1px solid #000;
 }
 /* --------------------------------------------------
  * Pixelgarage Footer

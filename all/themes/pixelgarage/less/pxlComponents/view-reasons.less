@@ -14,10 +14,12 @@
 // General settings
 // -------------------------
 .view.view-reasons {
-  margin: 0 0 50px;
+  margin: 0 auto 50px;
+  max-width: @pxl-max-width;
+
 
   .view-header {
-    padding: 0 20px;
+    padding: 0;
 
     p {
       padding: 50px 0 30px;
@@ -29,23 +31,13 @@
       border-top: 1px solid @pxl-color-border-light;
     }
 
-    @media @narrow {
-      padding: 0 30px;
-    }
-
     @media @tablet {
-      padding: 0 80px;
-
       p {
         font-size: 52px;
         line-height: 58px;
         letter-spacing: -0.02em;
         text-align: left;
       }
-    }
-
-    @media @normal {
-      padding: 0 100px;
     }
   }
 
