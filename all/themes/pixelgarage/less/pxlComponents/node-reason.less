@@ -1,0 +1,88 @@
+/*
+ *  Node reason component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-reason {
+  width: 100%;
+
+  .row {
+    margin: 0;
+
+    div.col-sm-12 {
+      padding: 20px;
+
+      @media @narrow {
+        padding: 20px 30px;
+      }
+
+      @media @tablet {
+        padding: 30px 80px;
+      }
+
+      @media @normal {
+        padding: 30px 100px;
+      }
+
+      .field-name-field-reason-number {
+        display: block;
+        margin: 0 auto;
+
+        .field-item {
+          display: block;
+          margin: 0 auto 20px;
+          width: 45px;
+          height: 45px;
+          font-family: @pxl-text-font-bold;
+          font-size: 30px;
+          line-height: 46px;
+          text-align: center;
+          color: #fff;
+          #pxl-mixins.border-radius(50%);
+          background-color: @pxl-color-gold;
+        }
+
+        @media @tablet {
+          display: inline-block;
+          margin: 0 -2px;
+          width: 10%;
+          min-height: 80px;
+          vertical-align: top;
+
+          .field-item {
+            margin: 0;
+          }
+        }
+      }
+
+      .field-name-body {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        #pxl-mixins.wysiwyg-body;
+        text-align: center;
+
+        @media @tablet {
+          display: inline-block;
+          margin: 0 -2px;
+          padding-left: 20px;
+          width: 90%;
+          vertical-align: top;
+          text-align: left;
+        }
+      }
+
+    }
+  }
+}

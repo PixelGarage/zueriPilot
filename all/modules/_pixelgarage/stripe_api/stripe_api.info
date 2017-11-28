@@ -1,0 +1,11 @@
+name = Stripe API
+description = Provides an integration to use the Stripe API library
+core = 7.x
+package = Stripe
+
+dependencies[] = libraries
+
+configure = admin/config/services/stripe_api
+
+version = "7.x-1.0-alpha2"
+

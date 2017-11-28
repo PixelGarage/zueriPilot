@@ -1,0 +1,121 @@
+/*
+ *  Webform Addons component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+.form-label() {
+  margin: 0 0 20px;
+  padding: 0;
+  width: 100%;
+  font-family: @pxl-text-font-bold;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: normal;
+  text-align: center;
+  color: @webform-color-label;
+
+  span.form-required {
+    color: @webform-color-text;
+  }
+  @media @tablet {
+    width: auto;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: left;
+  }
+
+}
+
+
+
+// Webform settings
+// -------------------------
+form.webform-client-form-25,
+form.webform-client-form-30 {
+  // all components
+  .webform-component {
+    display: block;
+    margin: 50px auto;
+    padding: 0;
+    width: @webform-max-width;
+    background-color: #fff;
+
+    .control-label {
+      .form-label;
+    }
+
+    div.description {
+      display: none;
+    }
+
+    input.form-text {
+      display: block;
+      margin: 0 auto;
+      padding: 14px 15px;
+      height: auto;
+      width: 100%;
+      font-family: @pxl-text-font;
+      font-size: 20px;
+      line-height: 1;
+      text-align: left;
+      color: @webform-color-text;
+      box-shadow: none;
+      #pxl-mixins.border-radius(@border-radius-large);
+      border: 1px solid @webform-color-border;
+      background-color: @webform-bg-color-input;
+      #pxl-mixins.placeholder(@text-color-disabled, center);
+
+      @media @tablet {
+        text-align: left;
+        #pxl-mixins.placeholder(@text-color-disabled, left);
+      }
+
+    }
+    input.form-text:focus {
+      border: 1px solid @webform-color-border-active;
+      .box-shadow(1px 1px 3px @webform-color-shadow inset);
+    }
+
+    .radio {
+      > label {
+        padding-left: 20%;
+        font-family: @pxl-text-font;
+        font-size: 20px;
+        font-weight: normal;
+        text-align: left;
+
+        > .form-radio {
+          //display: none;
+          margin: 7px 0 0 -30px;
+        }
+
+        @media @tablet {
+          padding-left: 40px;
+          font-size: 22px;
+
+          > .form-radio {
+            //display: none;
+            margin: 10px 0 0 -30px;
+          }
+        }
+
+      }
+    }
+  }
+
+  div.form-actions {
+    margin: 50px 0;
+    padding-top: 0;
+    text-align: center;
+
+    button.webform-submit {
+      .resp-submit-button(22px);
+      padding: 12px 30px;
+    }
+  }
+}

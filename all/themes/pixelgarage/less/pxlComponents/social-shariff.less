@@ -1,0 +1,89 @@
+/*
+ *  Shariff social-buttons component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@shariff-icon-size: 30px;
+
+// Mixins
+// -------------------------
+
+.social-shariff(@icon-size: @shariff-icon-size;
+                @color: @text-color;
+                @color-hover: @pxl-color-active;
+                @text-display: none) {
+
+  ul {
+    display: inline-block;
+    #pxl-mixins.no-list-style();
+    padding: 10px 0;
+
+    &.orientation-horizontal {}
+
+    &.orientation-vertical {}
+
+    li {
+      display: inline-block;
+      #pxl-mixins.no-list-style();
+      padding: 0 10px 0 0;
+
+      body.desktop &.whatsapp {
+        display: none;
+      }
+
+      a {
+        display: block;
+        width: auto;
+        text-decoration: none;
+        color: @color;
+        border: none;
+        background: none;
+
+        &:hover, &:focus {
+          color: @color-hover;
+        }
+
+        span.fa {
+          display: inline-block;
+          font-size: @icon-size;
+          line-height: @icon-size;
+          text-align: center;
+          vertical-align: middle;
+
+          &.fa-facebook:before {
+            content: '\f082';
+          }
+          &.fa-twitter:before {
+            content: '\f081';
+          }
+          &.fa-whatsapp {
+            padding: 1px 2px;
+            font-size: @icon-size - 4px;
+            color: @pxl-color-body-bg;
+            line-height: 1;
+            #pxl-mixins.border-radius(3px);
+            background-color: #fff;
+
+            &:hover {
+              background-color: @pxl-color-active;
+            }
+          }
+          &.fa-envelope:before {
+            content: '\f199';
+          }
+        }
+
+        span.share_text {
+          display: @text-display;
+        }
+      }
+
+    }
+  }
+}
+
+
+
+// Main settings
+// -------------------------
