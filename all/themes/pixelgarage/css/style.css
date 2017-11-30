@@ -6115,7 +6115,7 @@ button.close {
   font-size: 20px;
   background-color: #ff9900;
   background-clip: padding-box;
-  border: 1px solid #2dba71;
+  border: 1px solid #1264CC;
   border: 1px solid #a68c5a;
   border-radius: 6px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -6164,7 +6164,7 @@ button.close {
   left: 50%;
   margin-left: -11px;
   border-bottom-width: 0;
-  border-top-color: #2dba71;
+  border-top-color: #1264CC;
   border-top-color: #a68c5a;
   bottom: -11px;
 }
@@ -6180,7 +6180,7 @@ button.close {
   left: -11px;
   margin-top: -11px;
   border-left-width: 0;
-  border-right-color: #2dba71;
+  border-right-color: #1264CC;
   border-right-color: #a68c5a;
 }
 .popover.right > .arrow:after {
@@ -6194,7 +6194,7 @@ button.close {
   left: 50%;
   margin-left: -11px;
   border-top-width: 0;
-  border-bottom-color: #2dba71;
+  border-bottom-color: #1264CC;
   border-bottom-color: #a68c5a;
   top: -11px;
 }
@@ -6210,7 +6210,7 @@ button.close {
   right: -11px;
   margin-top: -11px;
   border-right-width: 0;
-  border-left-color: #2dba71;
+  border-left-color: #1264CC;
   border-left-color: #a68c5a;
 }
 .popover.left > .arrow:after {
@@ -10110,7 +10110,7 @@ form#user-login {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background-color: #2dba71;
+  background-color: #1264CC;
 }
 .node.node-page .row div.col-sm-12 .field-name-title h2 {
   margin: 20px 0 50px;
@@ -10461,7 +10461,7 @@ form#user-login {
 }
 .node.node-page .row div.col-sm-12 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #1264CC;
   background: none;
 }
 .node.node-page .row div.col-sm-12 .field-name-body img {
@@ -10891,7 +10891,7 @@ form#user-login {
 }
 .node.node-reason .row div.col-sm-12 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #1264CC;
   background: none;
 }
 .node.node-reason .row div.col-sm-12 .field-name-body img {
@@ -10933,7 +10933,7 @@ form#user-login {
 }
 .node.node-share .row div.col-sm-12 {
   padding: 20px;
-  background-color: #2dba71;
+  background-color: #1264CC;
 }
 @media screen and (min-width: 30em) {
   .node.node-share .row div.col-sm-12 {
@@ -11333,7 +11333,7 @@ form#user-login {
 }
 .node.node-footer .row div.col-sm-12 .field-name-field-medienkontakt hr {
   border: 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #1264CC;
   background: none;
 }
 .node.node-footer .row div.col-sm-12 .field-name-field-medienkontakt img {
@@ -11378,12 +11378,12 @@ form#user-login {
 }
 @media screen and (min-width: 30em) {
   .node.node-webform .row .col-sm-12 {
-    padding: 50px 15px;
+    padding: 50px 20px;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-webform .row .col-sm-12 {
-    padding: 80px 20px;
+    padding: 80px 40px;
   }
 }
 .node.node-webform .row .col-sm-12 .field-name-field-slogan .field-item {
@@ -11734,7 +11734,7 @@ form#user-login {
 }
 .node.node-webform .row .col-sm-12 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #1264CC;
   background: none;
 }
 .node.node-webform .row .col-sm-12 .field-name-body img {
@@ -12241,7 +12241,7 @@ form#user-login {
 .node.node-webform.view-mode-taler .row .col-sm-12 .field-name-body hr,
 .node.node-webform.view-mode-taler .row .col-sm-6 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #1264CC;
   background: none;
 }
 .node.node-webform.view-mode-taler .row .col-sm-12 .field-name-body img,
@@ -12285,6 +12285,9 @@ form#user-login {
   padding: 0;
   width: 100%;
 }
+.node.node-page-banner .row .col-sm-12 .field-name-field-images .field-item {
+  background-color: #1264CC;
+}
 .node.node-page-banner .row .col-sm-12 .field-name-field-images .field-item .carousel {
   position: relative;
   margin: 0;
@@ -12297,10 +12300,13 @@ form#user-login {
 .node.node-page-banner .row .col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item > div {
   width: 100%;
   height: 300px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 100%  !important;
 }
 @media screen and (min-width: 48em) {
   .node.node-page-banner .row .col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item > div {
-    height: 400px !important;
+    height: 450px !important;
   }
 }
 .node.node-page-banner .row .col-sm-12 .field-name-field-images .field-item .carousel > .carousel-indicators {
@@ -12311,7 +12317,7 @@ form#user-login {
 }
 .node.node-page-banner .row .col-sm-12 .field-name-odometer {
   position: absolute;
-  top: 0;
+  top: 110px;
   width: 80%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -12367,7 +12373,13 @@ form#user-login {
     width: 6px;
   }
 }
+@media screen and (min-width: 48em) {
+  .node.node-page-banner .row .col-sm-12 .field-name-odometer {
+    top: 170px;
+  }
+}
 .node.node-page-banner .row .col-sm-12 .field-name-field-slogan-row-one {
+  display: none;
   position: absolute;
   top: 28%;
   left: 0;
@@ -12388,7 +12400,7 @@ form#user-login {
   text-transform: uppercase;
   white-space: nowrap;
   color: #fff;
-  background-color: #2dba71;
+  background-color: #1264CC;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 30em) {
@@ -12506,7 +12518,7 @@ form#user-login {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: none;
-  background-color: #2dba71;
+  background-color: #1264CC;
 }
 .node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .stripe-button:hover,
 .node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .stripe-button:focus {
@@ -12565,7 +12577,7 @@ form#user-login {
   border: none;
 }
 .node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form .input-group .form-item-stripe-button-custom-amount input.form-text:focus {
-  border: 1px solid #2dba71;
+  border: 1px solid #1264CC;
   box-shadow: 1px 1px 1px #aaa inset;
 }
 .node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form button.form-submit {
@@ -12584,7 +12596,7 @@ form#user-login {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: none;
-  background-color: #2dba71;
+  background-color: #1264CC;
   margin: 0 0 0 -4px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -12975,7 +12987,7 @@ form#user-login {
 }
 .node.node-spenden .row .col-sm-12 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #1264CC;
   background: none;
 }
 .node.node-spenden .row .col-sm-12 .field-name-body img {
@@ -13371,7 +13383,7 @@ form#user-login {
 }
 .node.node-article .row div.col-sm-12 .field-name-body hr {
   border: 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #1264CC;
   background: none;
 }
 .node.node-article .row div.col-sm-12 .field-name-body img {
@@ -14375,7 +14387,7 @@ form#user-login {
 .user-profile .row .col-sm-4 .field-name-field-website .field-item a:hover,
 .user-profile .row .col-sm-8 .field-name-field-website .field-item a:hover,
 .user-profile .row .col-sm-12 .field-name-field-website .field-item a:hover {
-  color: #fff;
+  color: #1264CC;
   text-decoration: none;
 }
 .user-profile .row .col-sm-4 .field-name-field-image,
@@ -14903,7 +14915,7 @@ form#user-login {
 .user-profile .row .col-sm-8 .field-name-field-short-description .field-item hr,
 .user-profile .row .col-sm-12 .field-name-field-short-description .field-item hr {
   border: 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #1264CC;
   background: none;
 }
 .user-profile .row .col-sm-4 .field-name-field-short-description .field-item img,
@@ -15729,7 +15741,7 @@ form#user-profile-form div .form-actions .form-submit .icon {
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item hr {
   border: 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #1264CC;
   background: none;
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item img {
@@ -16061,14 +16073,14 @@ form.webform-client-form-29 .webform-component .control-label {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background: #2dba71 url(../images/call2action-90.svg) no-repeat center center / 50% 70%;
+  background: #1264CC url(../images/call2action-90.svg) no-repeat center center / 50% 70%;
 }
 @media screen and (min-width: 48em) {
   form.webform-client-form-18 .webform-component .control-label,
   form.webform-client-form-29 .webform-component .control-label {
     display: inline-block;
     margin: 0 5px 0 0;
-    background: #2dba71 url(../images/call2action.svg) no-repeat center center / 70% 50%;
+    background: #1264CC url(../images/call2action.svg) no-repeat center center / 70% 50%;
   }
 }
 form.webform-client-form-18 .webform-component div.description,
@@ -16154,7 +16166,7 @@ form.webform-client-form-18 .webform-component input:focus,
 form.webform-client-form-29 .webform-component input:focus,
 form.webform-client-form-18 .webform-component textarea:focus,
 form.webform-client-form-29 .webform-component textarea:focus {
-  border: 1px solid #2dba71;
+  border: 1px solid #1264CC;
   -webkit-box-shadow: 1px 1px 3px #ccc inset;
   box-shadow: 1px 1px 3px #ccc inset;
 }
@@ -16191,8 +16203,8 @@ form.webform-client-form-29 div.form-actions button.webform-submit {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  border: 2px solid #2dba71;
-  background-color: #2dba71;
+  border: 2px solid #1264CC;
+  background-color: #1264CC;
   padding: 12px 30px;
 }
 form.webform-client-form-18 div.form-actions button.webform-submit:hover,
@@ -16306,7 +16318,7 @@ form.webform-client-form-30 .webform-component input.form-text::-webkit-input-pl
 }
 form.webform-client-form-25 .webform-component input.form-text:focus,
 form.webform-client-form-30 .webform-component input.form-text:focus {
-  border: 1px solid #2dba71;
+  border: 1px solid #1264CC;
   -webkit-box-shadow: 1px 1px 3px #ccc inset;
   box-shadow: 1px 1px 3px #ccc inset;
 }
@@ -16355,8 +16367,8 @@ form.webform-client-form-30 div.form-actions button.webform-submit {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  border: 2px solid #2dba71;
-  background-color: #2dba71;
+  border: 2px solid #1264CC;
+  background-color: #1264CC;
   padding: 12px 30px;
 }
 form.webform-client-form-25 div.form-actions button.webform-submit:hover,
@@ -16464,7 +16476,7 @@ form.webform-client-form-48 .webform-component input:focus,
 form.webform-client-form-49 .webform-component input:focus,
 form.webform-client-form-48 .webform-component textarea:focus,
 form.webform-client-form-49 .webform-component textarea:focus {
-  border: 1px solid #2dba71;
+  border: 1px solid #1264CC;
   -webkit-box-shadow: 1px 1px 3px #ccc inset;
   box-shadow: 1px 1px 3px #ccc inset;
 }
@@ -16492,8 +16504,8 @@ form.webform-client-form-49 div.form-actions button.webform-submit {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  border: 2px solid #2dba71;
-  background-color: #2dba71;
+  border: 2px solid #1264CC;
+  background-color: #1264CC;
   padding: 12px 30px;
 }
 form.webform-client-form-48 div.form-actions button.webform-submit:hover,
@@ -16514,6 +16526,17 @@ form.webform-client-form-49 div.form-actions button.webform-submit:focus {
 .view.view-reasons {
   margin: 0 auto 50px;
   max-width: 800px;
+  padding: 50px 10px;
+}
+@media screen and (min-width: 30em) {
+  .view.view-reasons {
+    padding: 50px 20px;
+  }
+}
+@media screen and (min-width: 48em) {
+  .view.view-reasons {
+    padding: 80px 40px;
+  }
 }
 .view.view-reasons .view-header {
   padding: 0;

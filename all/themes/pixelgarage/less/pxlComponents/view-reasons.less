@@ -16,7 +16,15 @@
 .view.view-reasons {
   margin: 0 auto 50px;
   max-width: @pxl-max-width;
+  padding: 50px 10px;
 
+  @media @narrow {
+    padding: 50px 20px;
+  }
+
+  @media @tablet {
+    padding: 80px 40px;
+  }
 
   .view-header {
     padding: 0;
